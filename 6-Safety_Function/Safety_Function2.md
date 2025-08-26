@@ -8,4 +8,8 @@ When executing the approach detection function, the system operates as follows:�
   - If the robot is operating, it maintains the current state.  
   - If the robot is stopped, the restart prevention function is activated until a restart signal is received.  
 
-If an object is detected in the **warning zone** of the detection area, the system outputs a robot speed‑reduction guidance signal. If an object is detected in the **stop zone**, the system outputs a robot stop guidance signal. The system’s outputs are transmitted to the robot’s safety‑related main control system, which controls the robot according to the received signals. The safety‑related main control system of the robot periodically transmits robot state information back to the system. The system check...
+If an object is detected in the warning zone of the detection area, the system outputs a guidance signal to reduce the robot’s operating speed.
+If an object is detected in the stop zone, the system outputs a guidance signal to stop the robot.
+The system’s outputs are transmitted to the robot’s safety-related main control system, which controls the robot according to the received signals.
+The robot’s safety-related main control system periodically sends the robot’s status information back to the system.
+The system verifies whether the received robot status matches the results of the control guidance signals, and if they do not match, the system switches to a safe state.

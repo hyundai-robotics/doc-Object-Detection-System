@@ -1,23 +1,23 @@
-﻿# Object Detection System
+# Object Detection System
 
-1	개요
+## 1 Overview
 
-1.1	문서의 목적
-본 문서는 협동 로봇 HDC35-18에 탑재되는 서브 시스템인 객체 감지 시스템에 대한 설명을 목적으로 한다. 본 문서는 시스템을 제어/사용하는 사람을 보호하는 방법과 안전한 설치, 사용, 유지관리 방법에 대한 설명을 포함한다.
-본 문서에는 IEC 61508에 따른 안전 관련 정보가 포함되어 있다. 모든 안전과 관련된 요소는 협동 로봇 HDC35-18의 서브 시스템으로 작동하는 것을 전제로 하며, 객체 감지 시스템만 별도 구동 시 안전을 보장할 수 없다. 
-본 문서는 협동 로봇 HDC35-18과 로봇의 안전 관련 메인 제어 시스템, 주변 기기에 대한 설명을 취급하지 않는다.
+### 1.1 Purpose of this Document
+This document describes the object detection system, which is a subsystem mounted on the collaborative robot HDC35‑18. It explains how to protect the people who control/use the system, and how to safely install, use, and maintain it.  
+This document contains safety‑related information according to IEC 61508. All safety‑related elements assume operation as a subsystem of the collaborative robot HDC35‑18. Safety cannot be guaranteed when the object detection system operates independently.  
+This document does not deal with the collaborative robot HDC35‑18 itself, its safety‑related main control system, or peripheral equipment.
 
-1.2	관련 의무
-본 문서는 제품의 주요 구성요소로 제품의 실용 수명이 끝날 때까지 보관해야 한다. 납품 시점부터 폐기 시점까지 객체 감지 시스템과 관련된 모든 상황에서 본 설명서를 참조해야 한다. 또한 시스템을 사용하는 사람이 접근하기 쉽고 파손될 위험이 없는 곳에서 파손없이 보관해야 한다. 만약 설명서를 분실하거나 손상된 경우 판매처에 연락해야 한다.
+### 1.2 Obligations
+This document is a major component of the product and must be kept until the end of the product’s service life. From delivery to disposal, this manual should be referenced for all situations related to the object detection system. It must be stored in a location that is easily accessible to the user and free from risk of damage. If the manual is lost or damaged, contact the supplier.
 
-1.3	대상 사용자
-* 제조사: 시스템을 개발한 업체
-* 설치자: 시스템 설치, 구성 담당자
-* 유지보수 담당자: 시스템 유지보수 담당자
+### 1.3 Intended Users
+* **Manufacturer**: The company that developed the system  
+* **Installer**: Responsible for system installation and configuration  
+* **Maintenance personnel**: Responsible for system maintenance
 
-1.4	기호 및 의미
+### 1.4 Symbols and Meanings
 
-| 기호 | 의미 |
-|------|------|
-|![](_assets/경고기호.png) |[경고] 준수하지 않을 경우 심각한 부상이나 사망을 야기할 수 있는 위험 상황이 발생할 수 있음 |
-|![](_assets/느낌표기호.png)|[주의 사항] 준수하지 않을 경우 장비에 심각한 피해를 줄 수 있거나, 장비가 의도한 대로 작동하지 않을 가능성이 있는 의무 사항 |
+| Symbol | Meaning |
+|--------|---------|
+| ![](_assets/경고기호.png) | **[Warning]** If not observed, a hazardous situation could occur which may result in serious injury or death. |
+| ![](_assets/느낌표기호.png) | **[Caution]** If not observed, may cause serious damage to equipment or prevent it from operating as intended. |【220†source】

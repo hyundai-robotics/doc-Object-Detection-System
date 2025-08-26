@@ -2,7 +2,7 @@
 
 
 * [1. README](README.md)
-* [2. Terms_and_Abbreviations](2-erms_and_Abbreviations/Terms_and_Abbreviations.md)
+* [2. Terms_and_Abbreviations](2-Terms_and_Abbreviations/Terms_and_Abbreviations.md)
 * [3. Safety_Information](3-Safety_Information/Safety_Information1.md)
   * [3-1. Purpose](3-Safety_Information/Safety_Information1.md)
   * [3-2. Evaluation](3-Safety_Information/Safety_Information2.md)
