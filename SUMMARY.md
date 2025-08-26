@@ -2,9 +2,9 @@
 
 
 * [1. 개요](README.md)
-* [2. Terms_and_Abbreviations](2-용어%20및%20약어/Terms_and_Abbreviations.md)
-* [3. 안전 관련 정보](3-안전%20관련%20정보/안전관련정보1.md)
-  * [3-1. 용도](3-안전%20관련%20정보/안전관련정보1.md)
+* [2. Terms_and_Abbreviations](2-erms_and_Abbreviations/Terms_and_Abbreviations.md)
+* [3. Safety_Information](3-afety_Information/Safety_Information1.md)
+  * [3-1. 용도](3-Safety_Information/Safety_Information1.md)
   * [3-2. 평가](3-안전%20관련%20정보/안전관련정보2.md)
   * [3-3. 경고](3-안전%20관련%20정보/안전관련정보3.md)
   * [3-4. 표준](3-안전%20관련%20정보/표준.md)
