@@ -2,7 +2,7 @@
 
 ## 7.1 Overview of Additional Functions
 
-The system performs the following additional functions:【202†source】
+The system performs the following additional functions:
 
 ### 7.1.1 Prevention of Axis Rotation
 The system stores the axis state during sensor installation. If axis rotation occurs, the system issues a warning.  
