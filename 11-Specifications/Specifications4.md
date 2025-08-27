@@ -6,7 +6,7 @@
 
 The system software was developed in compliance with IEC 61508-3.  
 It is embedded in the board and does not require integration or configuration by the user during initial installation.  
-Firmware update packages are managed by the manufacturer, and digital signatures prevent the use of unauthorized binary files.【344†source】
+Firmware update packages are managed by the manufacturer, and digital signatures prevent the use of unauthorized binary files.
 
 ![Warning Symbol](../_assets/경고기호.png)
 
@@ -14,4 +14,4 @@ If the firmware of the sensor unit or control unit is arbitrarily modified, chan
 
 ### 11.4.2 EtherCAT
 
-EtherCAT is a registered trademark and a patented technology licensed through Beckhoff Automation GmbH in Germany.【344†source】
+EtherCAT is a registered trademark and a patented technology licensed through Beckhoff Automation GmbH in Germany.

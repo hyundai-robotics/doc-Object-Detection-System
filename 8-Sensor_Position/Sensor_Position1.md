@@ -2,7 +2,7 @@
 
 ## 8.1 Sensor Position Guidelines to Prevent Malfunction of Safety Functions
 
-The safety functions operate when the sensor can detect human movement (including static residual movement). The safety functions are guaranteed to operate correctly only when the person’s chest is included within the sensor’s detection range. Therefore, detection is not guaranteed in cases where the person is crouching, lying down, etc.【211†source】
+The safety functions operate when the sensor can detect human movement (including static residual movement). The safety functions are guaranteed to operate correctly only when the person’s chest is included within the sensor’s detection range. Therefore, detection is not guaranteed in cases where the person is crouching, lying down, etc.
 
 ### 8.1.1 Situations Requiring Caution
 Caution is required in environments where the system operates as follows, and additional safety measures may be necessary:
