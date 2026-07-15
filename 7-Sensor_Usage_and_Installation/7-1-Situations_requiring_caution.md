@@ -8,3 +8,7 @@ Special attention is required, and additional safety measures may need to be imp
 {% hint style="danger" %} 
 Depending on the site environment, ensuring sufficient safety with the radar sensor alone may be difficult. In this case, additional safety devices must be applied.
 {% endhint %}
+
+{% hint style="danger" %} 
+Selon l'environnement d'installation, le capteur radar seul peut ne pas être suffisant pour garantir un niveau de sécurité adéquat. Dans ce cas, il est impératif de mettre en œuvre des dispositifs de sécurité complémentaires.
+{% endhint %}

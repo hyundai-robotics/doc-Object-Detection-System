@@ -10,3 +10,7 @@
 {% hint style="danger" %}
 Outdoor use: Safety and normal operation not guaranteed for outdoor use
 {% endhint %}
+
+{% hint style="danger" %}
+Utilisation en extérieur: La sécurité et le bon fonctionnement du système ne sont pas garantis en cas d'utilisation en extérieur.
+{% endhint %}

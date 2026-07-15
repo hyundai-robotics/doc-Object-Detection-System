@@ -146,3 +146,7 @@ System parameters can be modified using the TP. Below are the configurations and
 {% hint style="danger" %}
 System parameters directly impact detection performance. Therefore, after configuring parameters, it is essential to verify proper functionality and conduct a comprehensive risk assessment.
 {% endhint %}
+
+{% hint style="danger" %}
+Les paramètres du système ont une influence directe sur les performances de détection. Après leur configuration, il est impératif de vérifier le bon fonctionnement du système et de procéder à une évaluation des risques.
+{% endhint %}

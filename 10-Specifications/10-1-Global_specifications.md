@@ -20,3 +20,8 @@
 Guaranteed response time: Not guaranteed during verification or update.<br>
 IP rating: Compliance is ensured when the system is mounted on the mechanical structure. If the system is arbitrarily disassembled and used separately, the corresponding rating cannot be guaranteed.
 {% endhint %}
+
+{% hint style="danger" %}
+Temps de réaction garanti: Not guaranteed during verification or update<br>
+Indice IP: La conformité aux spécifications est garantie lorsque le système est monté sur une structure de machine conformément à l'usage prévu. En cas de démontage du système et d'utilisation séparée de ses composants, cette conformité n'est plus garantie.
+{% endhint %}

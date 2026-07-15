@@ -6,3 +6,7 @@ The restart signal is generated only when the motor is turned on again after all
 {% hint style="danger" %} 
 Always ensure that no operators are inside the radar detection zone before initiating a restart.
 {% endhint %}
+
+{% hint style="danger" %} 
+Avant tout redémarrage, il est impératif de vérifier qu'aucun opérateur ne se trouve dans la zone de détection du radar.
+{% endhint %}

@@ -17,3 +17,7 @@ The measurement performance of the sensors used for safety functions meets the f
 {% hint style="danger" %}
 In the event of a failure occurring in any component of the system, the system will transition to a safe state, and the safety-related functions will become unavailable. If the user intentionally attempts to operate the safety-related functions after the system has transitioned to the safe state, the correct operation of the safety-related functions cannot be guaranteed.
 {% endhint %}
+
+{% hint style="danger" %}
+En cas de défaillance d'un composant du système, celui-ci passe en état de sécurité et les fonctions de sécurité sont désactivées. Si l'utilisateur manipule volontairement le système lorsqu'il est en état de sécurité afin de forcer l'activation des fonctions de sécurité, le fonctionnement normal de ces fonctions ne peut être garanti.
+{% endhint %}

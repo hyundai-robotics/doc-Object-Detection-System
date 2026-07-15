@@ -4,3 +4,7 @@ Before using a robot equipped with the system described in this document, a safe
 {% hint style="danger" %}
 After configuring the detection zone and object detection parameters, a safety assessment must be performed.
 {% endhint %}
+
+{% hint style="danger" %}
+Après avoir configuré la zone de détection, les paramètres de détection des objets radar, ainsi que les autres paramètres associés, une évaluation de sécurité doit impérativement être réalisée.
+{% endhint %}
