@@ -1,8 +1,8 @@
 {
-  "title": "Object Detection System",
-  "series": "Hyundai Robot Hi7 Controller",
+  "title": "Function Manual - Radar Object Detection System",
+  "series": "Hi7 Controller",
   "publisher": "Hyundai Robotics",
-  "langCode": "ko",
+  "langCode": "en",
   "tocTitle": "Table of Contents",
   "tocTitleElements": "[ \"h1\", \"h2\" ]"
 }

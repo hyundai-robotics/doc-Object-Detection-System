@@ -12,6 +12,11 @@
 
 {% include file="en/safety-notice.md" %}
 
+{% hint style="warning" %}
+- Control through external communication commands and applications is not a safety function and shall not be used as a substitute for a safety-related control system.
+- Safety functions such as SafeSpace and Soft Joint are supplementary risk-reduction measures and do not replace external safety fencing, interlocks, or risk assessments.
+{% endhint %}
+
 [__SOURCE](1-Overview/README.md)
 # 1	Overview
 [__SOURCE](1-Overview/1-1-Purpose_of_the_document.md)
@@ -197,10 +202,10 @@ System parameters can be modified using the TP. Below are the configurations and
     </tr>
     <tr>
       <td>zone1</td>
-      <td>500</td>
-      <td>5000</td>
-      <td>1000</td>
-      <td>Unit: mm</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Automatically activates when radar sensor is enabled</td>
     </tr>
     <tr>
       <td>zone2</td>
@@ -401,7 +406,7 @@ The detection area refers to a designated zone within the sensor’s measurable 
 
 [__SOURCE](5-Operation_Principle/5-2-Detection_area/5-2-3-Stop_area-distance.md)
 ### 5.2.3	Stop area distance
-Zone 1 corresponds to the stop zone; when the radar sensor is activated, Zone 1 is also automatically enabled. The Zone 1 value entered via the TP represents its starting point, whereas its ending point is determined by the starting point of the next active zone. If no other zones are active, the user-defined value is applied as the ending point. Below are examples of the Zone 1 range when the starting point is set to 500:
+Zone 1 corresponds to the stop zone; when the radar sensor is activated, Zone 1 is also automatically enabled. The ending point of Zone 1 is determined by the starting point of the next active zone. If no other zones are active, the user-defined value is applied as the ending point. Below are examples of the Zone 1 range:
 
 <table>
   <thead>
@@ -419,14 +424,14 @@ Zone 1 corresponds to the stop zone; when the radar sensor is activated, Zone 1 
       <td>zone2</td>
       <td>enable</td>
       <td>2000</td>
-      <td>500 ~ 2000 mm</td>
+      <td>~ 2000 mm</td>
     </tr>
     <tr>
       <td rowspan="2" style="vertical-align: middle;">2</td>
       <td>zone2</td>
       <td>disable</td>
       <td>-</td>
-      <td rowspan="2" style="vertical-align: middle;">500 ~ 3000 mm</td>
+      <td rowspan="2" style="vertical-align: middle;">~ 3000 mm</td>
     </tr>
     <tr>
       <td>zone3</td>
@@ -438,7 +443,7 @@ Zone 1 corresponds to the stop zone; when the radar sensor is activated, Zone 1 
       <td>zone2</td>
       <td>disable</td>
       <td>-</td>
-      <td rowspan="4" style="vertical-align: middle;">500 ~ 4000 mm</td>
+      <td rowspan="4" style="vertical-align: middle;">~ 4000 mm</td>
     </tr>
     <tr>
       <td>zone3</td>
@@ -557,7 +562,7 @@ If an object is detected in the stop zone, the system outputs a robot stop signa
 [__SOURCE](6-Safety_Function/6-3-Safety_function_Restart_prevention.md)
 ## 6.3	Safety function: Restart prevention
 The restart prevention function is a safety feature that prevents the robot's speed from automatically recovering or the robot from restarting arbitrarily when it has stopped or decelerated due to a detected moving object. The system determines whether to allow a restart by periodically receiving robot status signals from the robot's safety-related main control system. If the system is in a stopped or decelerated state and receives a restart signal from the robot's safety-related main control system, the robot resumes its original speed. If the system is not in a stopped or decelerated state, or if it does not receive a restart signal from the robot's safety-related main control system, it maintains its current state.<br>
-The restart signal is generated only when the motor is turned on after releasing the emergency stop switch on the controller.
+The restart signal is generated only when the motor is turned on again after all detected objects have completely cleared the detection area.
 
  
 {% hint style="danger" %} 
@@ -708,7 +713,7 @@ Go to [system] – [10. Safety System] – [Safety Radar] - [radar sensor settin
 </p>
 
 -	Active: Enables or disables the radar sensor
--	zone1: When the built-in radar sensor is enabled, Zone 1 (the stop zone) is automatically enabled. The value entered for zone1 is its start point, and its end point is equal to the start point of the next enabled zone. For example, if the start point of Zone 1 is set to 500, Zone 2 is disabled, and Zone 3 is enabled with a start point of 2000, the range for Zone 1 will be 500 to 2000 mm.
+-	zone1: When the built-in radar sensor is enabled, Zone 1 (the stop zone) is automatically enabled. The end point of Zone 1 is equal to the start point of the next enabled zone. For example, if Zone 1 is enabled, Zone 2 is disabled, and Zone 3 is enabled with a start point of 2000, the range of Zone 1 is 2000 mm from the radar sensor.
 -	zone2 ~ 4: Enter the start point for each zone; the start point of the next enabled zone serves as the end point of the previous zone. For example, if zone2 is set to 1000 and zone3 is set to 2000 and enabled, the range for zone2 is configured from 1000 to 2000 mm. When a moving object is detected within zones 2 to 4, a robot deceleration signal is output. The input range is 1000 to 5000. 
 -	End point: Sets the end point of the last zone. The input range is 500 to 5000.
 -	Valid azimuth start/end: Sets the start and end of angles of the detection zone. The input range is -55° to 55°.
