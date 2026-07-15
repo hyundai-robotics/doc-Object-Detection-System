@@ -8,7 +8,7 @@
       <th style="text-align: center;">파라미터</th>
       <th style="text-align: center;">활성화 상태</th>
       <th style="text-align: center;">입력값</th>
-      <th style="text-align: center;">영역2 범위</th>
+      <th style="text-align: center;">영역1 범위</th>
     </tr>
   </thead>
   <tbody>
