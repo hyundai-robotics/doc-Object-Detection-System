@@ -1,5 +1,5 @@
 ### 5.2.3	Stop area distance
-Zone 1 corresponds to the stop zone; when the radar sensor is activated, Zone 1 is also automatically enabled. The ending point of Zone 1 is determined by the starting point of the next active zone. If no other zones are active, the user-defined value is applied as the ending point. Below are examples of the Zone 1 range:
+Zone1 corresponds to the stop zone; when the radar sensor is activated, zone1 is also automatically enabled. The ending point of zone1 is determined by the starting point of the next active zone. If no other zones are active, the user-defined value is applied as the ending point. Below are examples of the zone1 range:
 
 <table>
   <thead>
@@ -8,7 +8,7 @@ Zone 1 corresponds to the stop zone; when the radar sensor is activated, Zone 1 
       <th style="text-align: center;">Parameter</th>
       <th style="text-align: center;">Activation status</th>
       <th style="text-align: center;">Input value</th>
-      <th style="text-align: center;">Zone2 range</th>
+      <th style="text-align: center;">Zone1 range</th>
     </tr>
   </thead>
   <tbody>

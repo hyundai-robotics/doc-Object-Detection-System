@@ -7,7 +7,7 @@ Go to [system] – [10. Safety System] – [Safety Radar] - [radar sensor settin
 </p>
 
 -	Active: Enables or disables the radar sensor
--	zone1: When the built-in radar sensor is enabled, Zone 1 (the stop zone) is automatically enabled. The end point of Zone 1 is equal to the start point of the next enabled zone. For example, if Zone 1 is enabled, Zone 2 is disabled, and Zone 3 is enabled with a start point of 2000, the range of Zone 1 is 2000 mm from the radar sensor.
+-	zone1: When the built-in radar sensor is enabled, zone1 (the stop zone) is automatically enabled. The end point of zone1 is equal to the start point of the next enabled zone. For example, if zone1 is enabled, zone2 is disabled, and zone3 is enabled with a start point of 2000, the range of zone1 is 2000 mm from the radar sensor.
 -	zone2 ~ 4: Enter the start point for each zone; the start point of the next enabled zone serves as the end point of the previous zone. For example, if zone2 is set to 1000 and zone3 is set to 2000 and enabled, the range for zone2 is configured from 1000 to 2000 mm. When a moving object is detected within zones 2 to 4, a robot deceleration signal is output. The input range is 1000 to 5000. 
 -	End point: Sets the end point of the last zone. The input range is 500 to 5000.
 -	Valid azimuth start/end: Sets the start and end of angles of the detection zone. The input range is -55° to 55°.
