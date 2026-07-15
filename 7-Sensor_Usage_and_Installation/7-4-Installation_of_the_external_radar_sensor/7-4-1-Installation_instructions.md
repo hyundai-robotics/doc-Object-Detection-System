@@ -19,3 +19,6 @@
 <p align="center">
     <img src="../../_assets/7.4.1_figure_3.png" width="550"> </img>
 </p>
+<br>
+
+참고) 외장형 레이더의 케이블은 1m단위로 제작이 가능하고, 각 케이블 당 최대 5m까지 가능하다.
