@@ -96,4 +96,6 @@
   * [10-4. Software](10-Specifications/10-4-Software/README.md)
     * [10-4-1. System configuration software](10-Specifications/10-4-Software/10-4-1-System_configuration_software.md)
     * [10-4-2. EtherCAT](10-Specifications/10-4-Software/10-4-2-EtherCAT.md)
-
+* [Attachment](attachment/README.md)
+  * [Rules on Occupational Safety and Health Standards and Public Notice on Safety Inspection](attachment/rules-criteria-and-public-notice.md)
+* [Quality Assurance](warranty.md)
