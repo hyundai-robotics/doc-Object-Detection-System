@@ -96,4 +96,6 @@
   * [10-4. 소프트웨어](10-Specifications/10-4-Software/README.md)
     * [10-4-1. 시스템 구성 펌웨어](10-Specifications/10-4-Software/10-4-1-System_configuration_software.md)
     * [10-4-2. EtherCAT](10-Specifications/10-4-Software/10-4-2-EtherCAT.md)
-
+* [별첨](attachment/README.md)
+  * [산업안전보건기준에 관한 규칙 및 안전검사 고시](attachment/rules-criteria-and-public-notice.md)
+* [품질 보증](warranty.md)
