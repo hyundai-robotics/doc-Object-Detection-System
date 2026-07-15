@@ -1,5 +1,5 @@
 ### 8.1.1	Detection area configuration
-Go to [system] – [10. Safety System] – [Safety Radar] - [radar sensor setting] menu to configure the detection zone. 
+Go to `[F2: system] – 10. Safety System – Safety Radar - radar sensor setting` menu to configure the detection zone. 
 -	Tabs 1 to 6: Up to six radar sensors can be used. Tabs 1 to 4 represent the built-in radars installed on the robot base, while Tabs 5 and 6 represent the external radars. The installation locations of the built-in radars are shown in the figure below.
 
 <p align="center">

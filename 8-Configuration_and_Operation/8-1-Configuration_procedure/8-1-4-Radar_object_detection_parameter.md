@@ -1,5 +1,5 @@
 ### 8.1.4	Radar object detection parameter
-Navigate to [system] – [10. Safety System] – [Safety Radar] - [Radar object detection parameter] menu to configure object detection parameters. Detection performance depends on the configured values. After setting the parameters, ensure to verify proper operation and perform a risk assessment.
+Navigate to `[F2: system] – 10. Safety System – Safety Radar - Radar object detection parameter` menu to configure object detection parameters. Detection performance depends on the configured values. After setting the parameters, ensure to verify proper operation and perform a risk assessment.
 -	epsilon: Represents the distance between points for clustering, used to distinguish between core points and outliers. If the distance between points is less than this value, they are processed as a cluster.
 -	min point: The minimum number of points needed to create a cluster.
 -	max speed: Represents the maximum speed of points to be grouped into a cluster. Higher values enable the detection of fast-moving objects, while lower values prevent the detection of objects moving faster than the set speed.
