@@ -28,7 +28,7 @@ System parameters can be modified using the TP. Below are the configurations and
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>Automatically activates when radar sensor is enabled</td>
+      <td>Auto-activated when the radar sensor is enabled</td>
     </tr>
     <tr>
       <td>zone2</td>
