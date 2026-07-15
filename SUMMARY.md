@@ -9,7 +9,7 @@
 * [2. 용어 및 약어](2-Terms_and_Abbreviations/README.md)
   * [2.1 용어](2-Terms_and_Abbreviations/2-1-Terms.md)
   * [2.2 약어](2-Terms_and_Abbreviations/2-2-Abbreviations.md)
-* [3. 안전 정보](3-Safety_Information/README.mdd)
+* [3. 안전 정보](3-Safety_Information/README.md)
   * [3-1. 용도](3-Safety_Information/3-1-Purpose.md)
   * [3-2. 평가](3-Safety_Information/3-2-Evaluation.md)
   * [3-3. 경고](3-Safety_Information/3-3-Warnings/README.md)

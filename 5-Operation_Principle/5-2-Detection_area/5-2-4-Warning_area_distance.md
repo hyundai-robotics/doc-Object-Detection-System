@@ -13,18 +13,18 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">1</td>
+      <td>1</td>
       <td>영역3</td>
       <td>활성화</td>
       <td>2000</td>
       <td>1000 ~ 2000 mm</td>
     </tr>
     <tr>
-      <td rowspan="2" style="text-align: center; vertical-align: middle;">2</td>
+      <td rowspan="2" style="vertical-align: middle;">2</td>
       <td>영역3</td>
       <td>비활성화</td>
       <td>-</td>
-      <td rowspan="2" style="text-align: center; vertical-align: middle;">1000 ~ 3000 mm</td>
+      <td rowspan="2" style="vertical-align: middle;">1000 ~ 3000 mm</td>
     </tr>
     <tr>
       <td>영역4</td>
@@ -32,11 +32,11 @@
       <td>3000</td>
     </tr>
     <tr>
-      <td rowspan="3" style="text-align: center; vertical-align: middle;">3</td>
+      <td rowspan="3" style="vertical-align: middle;">3</td>
       <td>영역3</td>
       <td>비활성화</td>
       <td>-</td>
-      <td rowspan="3" style="text-align: center; vertical-align: middle;">1000 ~ 4000 mm</td>
+      <td rowspan="3" style="vertical-align: middle;">1000 ~ 4000 mm</td>
     </tr>
     <tr>
       <td>영역4</td>
