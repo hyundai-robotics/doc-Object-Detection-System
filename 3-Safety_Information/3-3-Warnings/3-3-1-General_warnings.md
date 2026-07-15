@@ -1,0 +1,4 @@
+﻿### 3.3.1	General warnings
+-	Normal operation of the system assumes that installation and configuration tasks have been performed correctly. If the installation and configuration are not performed properly, the performance of the safety functions may be degraded, or the safety functions may fail to operate normally.
+-	If the system configuration is modified arbitrarily, the performance of the safety functions may be degraded, or the safety functions may fail to operate normally. If the system configuration is changed, it must be verified that the system operates correctly.
+-	When operating or storing the system, it must be verified that the environmental specifications (temperature, humidity, etc.) stated in this document are met. Operating or storing the system in environments outside the allowable range may cause performance degradation or malfunctions.

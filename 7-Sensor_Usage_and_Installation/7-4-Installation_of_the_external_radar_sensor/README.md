@@ -1,0 +1,2 @@
+## 7.4	Installation of the external radar sensor
+If there is a risk of an object approaching a blind spot that cannot be detected by the built-in radar, additional safety measures are required to prevent accidents. As one of the solutions, an external radar sensor can be installed to expand the detection zone; examples of this setup are provided below. However, please note that these are only selected examples, and appropriate measures must be taken based on the actual working environment.

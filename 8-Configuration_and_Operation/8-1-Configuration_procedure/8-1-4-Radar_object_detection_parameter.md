@@ -1,0 +1,9 @@
+### 8.1.4	Radar object detection parameter
+Navigate to [system] – [10. Safety System] – [Safety Radar] - [Radar object detection parameter] menu to configure object detection parameters. Detection performance depends on the configured values. After setting the parameters, ensure to verify proper operation and perform a risk assessment.
+-	epsilon: Represents the distance between points for clustering, used to distinguish between core points and outliers. If the distance between points is less than this value, they are processed as a cluster.
+-	min point: The minimum number of points needed to create a cluster.
+-	max speed: Represents the maximum speed of points to be grouped into a cluster. Higher values enable the detection of fast-moving objects, while lower values prevent the detection of objects moving faster than the set speed.
+-	hit active: Specifies the minimum number of consecutive frames needed for object recognition. Increasing this value enhances detection reliability but reduces detection speed. Decreasing this value may cause false detections due to noise.
+-	hit stop: Represents the maximum number of frames a detected object can persist without receiving new data.
+-	idis: Specifies the minimum moving distance needed for object detection. Increasing this value enhances detection reliability but reduces detection speed. Decreasing this value may cause incorrect detection due to noise.
+-	tracker radius: Represents the maximum radius for updating an object's position. If the next position of a detected object is within this value, the system tracks its location; if it falls outside, tracking stops. Higher values stabilize object tracking but may cause paths to blend with those of other objects. Conversely, lower values may lead to a loss of track, causing the same object to be redundantly detected as a new one.
