@@ -5,16 +5,22 @@
 [__SOURCE](0-about-this-manual/precautions.md)
 # Precautions
 
-{% include file="en/precautions.md" %}
+{% include file="fn/precautions.md" %}
 
 [__SOURCE](0-about-this-manual/safety-notice.md)
 # Safety Cautions
 
-{% include file="en/safety-notice.md" %}
+{% include file="fn/safety-notice.md" %}
 
 {% hint style="warning" %}
 - Control through external communication commands and applications is not a safety function and shall not be used as a substitute for a safety-related control system.
 - Safety functions such as SafeSpace and Soft Joint are supplementary risk-reduction measures and do not replace external safety fencing, interlocks, or risk assessments.
+{% endhint %}
+
+
+{% hint style="warning" %}
+- Le contrôle par des commandes de communication externes et des applications n'est pas une fonction de sécurité et ne doit pas être utilisé comme substitut à un système de commande lié à la sécurité. 
+- Les fonctions de sécurité telles que SafeSpace et Soft Joint sont des mesures complémentaires de réduction des risques et ne remplacent pas les barrières de sécurité externes, les dispositifs de verrouillage (interlocks) ni les évaluations des risques.
 {% endhint %}
 
 [__SOURCE](1-Overview/README.md)
@@ -90,12 +96,19 @@ The measurement performance of the sensors used for safety functions meets the f
 In the event of a failure occurring in any component of the system, the system will transition to a safe state, and the safety-related functions will become unavailable. If the user intentionally attempts to operate the safety-related functions after the system has transitioned to the safe state, the correct operation of the safety-related functions cannot be guaranteed.
 {% endhint %}
 
+{% hint style="danger" %}
+En cas de défaillance d'un composant du système, celui-ci passe en état de sécurité et les fonctions de sécurité sont désactivées. Si l'utilisateur manipule volontairement le système lorsqu'il est en état de sécurité afin de forcer l'activation des fonctions de sécurité, le fonctionnement normal de ces fonctions ne peut être garanti.
+{% endhint %}
 [__SOURCE](3-Safety_Information/3-2-Evaluation.md)
 ## 3.2	Evaluation
 Before using a robot equipped with the system described in this document, a safety assessment in accordance with the Machinery Directive must be conducted. Although the system meets functional safety requirements and has been certified, this does not guarantee the overall safety of the complete robotic system. A separate evaluation must be performed for the safety functions required at the entire robot system level.
 
 {% hint style="danger" %}
 After configuring the detection zone and object detection parameters, a safety assessment must be performed.
+{% endhint %}
+
+{% hint style="danger" %}
+Après avoir configuré la zone de détection, les paramètres de détection des objets radar, ainsi que les autres paramètres associés, une évaluation de sécurité doit impérativement être réalisée.
 {% endhint %}
 
 [__SOURCE](3-Safety_Information/3-3-Warnings/README.md)
@@ -124,10 +137,18 @@ After configuring the detection zone and object detection parameters, a safety a
 Technical or electrical modifications, replacements, damage, or removal of the product or its components constitute improper use. Using the product for purposes other than those specified in this document also constitutes improper use. Furthermore, using the product beyond its defined specifications, parameters, or characteristics constitutes improper use. In the event of improper use, the functionality of the product, including its safety functions, cannot be guaranteed. Improper use may result in performance degradation or malfunction.
 {% endhint %}
 
+{% hint style="danger" %}
+Toute modification, tout remplacement, toute détérioration ou tout retrait non autorisé, sur le plan technique ou électrique, du produit ou de l'un de ses composants est considéré comme une utilisation inappropriée. Toute utilisation du produit à des fins autres que celles spécifiées dans le présent document est également considérée comme une utilisation inappropriée. De même, toute utilisation du produit en dehors de ses spécifications, paramètres ou caractéristiques définis est considérée comme une utilisation inappropriée. En cas d'utilisation inappropriée, le bon fonctionnement du produit, y compris de ses fonctions de sécurité, ne peut être garanti et cela peut entraîner une dégradation des performances ou des dysfonctionnements.
+{% endhint %}
+
 [__SOURCE](3-Safety_Information/3-3-Warnings/3-3-5-Warning_regarding_EMC.md)
 ### 3.3.5	Warning regarding EMC
 {% hint style="warning" %}
 The system described in this document is designed for use in industrial environments. If used in non-industrial environments, appropriate measures must be taken to comply with the applicable EMC standards and guidelines required for that environment.
+{% endhint %}
+
+{% hint style="warning" %}
+Le système décrit dans le présent document est conçu pour être utilisé dans un environnement industriel. En cas d'utilisation dans un environnement non industriel, des mesures appropriées doivent être prises afin de garantir le respect des normes et des exigences relatives à la compatibilité électromagnétique (CEM) applicables à cet environnement.
 {% endhint %}
 
 [__SOURCE](3-Safety_Information/3-3-Warnings/3-3-6-Responsibility.md)
@@ -205,7 +226,7 @@ System parameters can be modified using the TP. Below are the configurations and
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>Automatically activates when radar sensor is enabled</td>
+      <td>Auto-activated when the radar sensor is enabled</td>
     </tr>
     <tr>
       <td>zone2</td>
@@ -324,6 +345,10 @@ System parameters can be modified using the TP. Below are the configurations and
 System parameters directly impact detection performance. Therefore, after configuring parameters, it is essential to verify proper functionality and conduct a comprehensive risk assessment.
 {% endhint %}
 
+{% hint style="danger" %}
+Les paramètres du système ont une influence directe sur les performances de détection. Après leur configuration, il est impératif de vérifier le bon fonctionnement du système et de procéder à une évaluation des risques.
+{% endhint %}
+
 [__SOURCE](4-System_Information/4-2-Communication/README.md)
 ## 4.2	Communication
 [__SOURCE](4-System_Information/4-2-Communication/4-2-1-Sensor_unit-Control_unit_communication.md)
@@ -371,11 +396,24 @@ Each sensor unit consists of two independent sensor elements. These sensors are 
 {% hint style="danger" %}
 If a conductive or metallic object is located in front of the sensor, the transmitted signal cannot penetrate it, which may affect object detection performance. If there is a high probability that conductive or metallic objects will be present in the system's operating environment, additional safety measures must be implemented based on a risk assessment.
 {% endhint %}
+
+{% hint style="danger" %}
+La présence d'un objet conducteur ou métallique devant le capteur empêche la pénétration des signaux émis par celui-ci et peut ainsi affecter les performances de détection des objets. Si la probabilité de présence d'objets conducteurs ou métalliques est élevée dans l'environnement de fonctionnement du système, des mesures de sécurité supplémentaires doivent être mises en œuvre à l'issue d'une évaluation des risques.
+{% endhint %}
 [__SOURCE](5-Operation_Principle/5-1-Sensor/5-1-3-Factors_affecting_reflected_signals.md)
 ### 5.1.3	Factors affecting reflected signals
 
 {% hint style="danger" %} 
 The strength of the reflected signal may vary depending on the characteristics and material of the object. Since this affects system operation, the safety function may be unnecessarily activated due to false positives in actually safe situations. Conversely, it may fail to activate due to false negatives when a stop or deceleration is required. When operating the system, parameters must be configured to optimize detection performance, taking into account reflected signal interference from objects or the surrounding environment.
+-	Size: Larger objects reflect stronger signals. Smaller objects are more likely to produce weaker signals.
+-	Shape: Smooth surfaces (e.g., metal plates) tend to reflect signals directly or in a focused manner, whereas irregular or rough surfaces scatter signals in various directions, potentially weakening the reflected signal strength.
+-	Material: Highly reflective materials such as metals or dense substances generate strong reflected signals. Absorptive materials (e.g., plastics, rubber, and fabrics) can attenuate the signal strength.
+-	Speed: If the object moves too fast or too slow, errors may occur in signal analysis.
+-	Multipath Effects: Signal reflections from surrounding structures other than the detection target (e.g., walls or floors) may result in unwanted interference signals. 
+{% endhint %}
+
+{% hint style="danger" %} 
+L'intensité du signal réfléchi peut varier en fonction des caractéristiques et du matériau de l'objet. Cette variation peut affecter le fonctionnement du système et entraîner l'activation inutile de la fonction de sécurité en raison de faux positifs dans des situations pourtant sûres. À l'inverse, la fonction de sécurité peut ne pas s'activer en raison de faux négatifs lorsqu'un arrêt ou une décélération est nécessaire. Lors de l'utilisation du système, les paramètres doivent être configurés de manière à optimiser les performances de détection, en tenant compte des interférences affectant le signal réfléchi, qu'elles proviennent des objets ou de l'environnement de fonctionnement.
 -	Size: Larger objects reflect stronger signals. Smaller objects are more likely to produce weaker signals.
 -	Shape: Smooth surfaces (e.g., metal plates) tend to reflect signals directly or in a focused manner, whereas irregular or rough surfaces scatter signals in various directions, potentially weakening the reflected signal strength.
 -	Material: Highly reflective materials such as metals or dense substances generate strong reflected signals. Absorptive materials (e.g., plastics, rubber, and fabrics) can attenuate the signal strength.
@@ -390,11 +428,15 @@ The strength of the reflected signal may vary depending on the characteristics a
 Only objects moving at a measurable speed within the detection zone can be detected; detection of stationary objects is not guaranteed.
 {% endhint %}
 
+{% hint style="danger" %} 
+Seuls les objets se déplaçant à une vitesse mesurable à l'intérieur de la zone de détection peuvent être détectés. La détection des objets immobiles n'est pas garantie.
+{% endhint %}
+
 [__SOURCE](5-Operation_Principle/5-2-Detection_area/README.md)
 ## 5.2	Detection area
 [__SOURCE](5-Operation_Principle/5-2-Detection_area/5-2-1-Meaning_of_detection_area.md)
 ### 5.2.1	Meaning of detection area
-The detection area refers to a designated zone within the sensor’s measurable range, and up to four detection areas can be configured. The detection zone is broadly divided into a stop zone and a warning zone; the stop zone comprises Zone 1, while the warning zone comprises Zones 2 through 4. Even if an object is detected within the sensor's measurable range, the robot will not stop or decelerate if the object is outside the designated detection areas. Each area can be enabled or disabled.
+The detection area refers to a designated zone within the sensor’s measurable range, and up to four detection areas can be configured. The detection zone is broadly divided into a stop zone and a warning zone; the stop zone comprises zone1, while the warning zone comprises zones 2 through 4. Even if an object is detected within the sensor's measurable range, the robot will not stop or decelerate if the object is outside the designated detection areas. Each area can be enabled or disabled.
 
 
 [__SOURCE](5-Operation_Principle/5-2-Detection_area/5-2-2-Detection_area_parameters.md)
@@ -406,7 +448,7 @@ The detection area refers to a designated zone within the sensor’s measurable 
 
 [__SOURCE](5-Operation_Principle/5-2-Detection_area/5-2-3-Stop_area-distance.md)
 ### 5.2.3	Stop area distance
-Zone 1 corresponds to the stop zone; when the radar sensor is activated, Zone 1 is also automatically enabled. The ending point of Zone 1 is determined by the starting point of the next active zone. If no other zones are active, the user-defined value is applied as the ending point. Below are examples of the Zone 1 range:
+Zone1 corresponds to the stop zone; when the radar sensor is activated, zone1 is also automatically enabled. The ending point of zone1 is determined by the starting point of the next active zone. If no other zones are active, the user-defined value is applied as the ending point. Below are examples of the zone1 range:
 
 <table>
   <thead>
@@ -415,7 +457,7 @@ Zone 1 corresponds to the stop zone; when the radar sensor is activated, Zone 1 
       <th style="text-align: center;">Parameter</th>
       <th style="text-align: center;">Activation status</th>
       <th style="text-align: center;">Input value</th>
-      <th style="text-align: center;">Zone2 range</th>
+      <th style="text-align: center;">Zone1 range</th>
     </tr>
   </thead>
   <tbody>
@@ -569,6 +611,10 @@ The restart signal is generated only when the motor is turned on again after all
 Always ensure that no operators are inside the radar detection zone before initiating a restart.
 {% endhint %}
 
+{% hint style="danger" %} 
+Avant tout redémarrage, il est impératif de vérifier qu'aucun opérateur ne se trouve dans la zone de détection du radar.
+{% endhint %}
+
 [__SOURCE](7-Sensor_Usage_and_Installation/README.md)
 # 7	Sensor Usage and Installation
 When a moving object is detected within the detection zone, the safety function is triggered according to the configuration. This section provides guidelines on sensor positioning and usage methods to ensure the correct operation of the safety function.
@@ -586,6 +632,9 @@ Special attention is required, and additional safety measures may need to be imp
 Depending on the site environment, ensuring sufficient safety with the radar sensor alone may be difficult. In this case, additional safety devices must be applied.
 {% endhint %}
 
+{% hint style="danger" %} 
+Selon l'environnement d'installation, le capteur radar seul peut ne pas être suffisant pour garantir un niveau de sécurité adéquat. Dans ce cas, il est impératif de mettre en œuvre des dispositifs de sécurité complémentaires.
+{% endhint %}
 [__SOURCE](7-Sensor_Usage_and_Installation/7-2-Proper_usage_of_built-in_radar_sensor.md)
 ## 7.2	Proper usage of built-in radar sensor
 When using a built-in sensor mounted on the robot base, caution is required as false detections or missed detections may occur if the robot obstructs or passes in front of the sensor. When using only the built-in radar sensors, a terminating resistor must be connected to the robot base. For detailed information, refer to 7.4.1Installation instructions.
@@ -652,7 +701,9 @@ Connect the XRS connector on the rear of the robot base to one of the connectors
 <p align="center">
     <img src="../../_assets/7.4.1_figure_3.png" width="550"> </img>
 </p>
+<br>
 
+Note) External radar cables can be customized in 1m increments, up to a maximum length of 5m per cable.
 [__SOURCE](7-Sensor_Usage_and_Installation/7-4-Installation_of_the_external_radar_sensor/7-4-2-Outside_of_the_robot's_operating_range.md)
 ### 7.4.2	Outside of the robot ‘s operating range
 Since false detections may occur if the robot obstructs or passes in front of the built-in radar sensor, the robot’s operating range must be excluded from the detection zone. However, this configuration creates a limitation where objects approaching the robot from outside the robot working area cannot be detected. To compensate for this limitation of the built-in sensor, an additional external radar sensor can be installed, and its detection zone should be configured to cover the area outside the robot’s operating range.
@@ -703,9 +754,13 @@ The figure below illustrates examples of normal operation and malfunction of the
 {% hint style="danger" %}  
 The initial configuration of the system must be performed only by authorized personnel. Before configuring the system, it must be verified that the robot controlled through this system operates as intended.
 {% endhint %}
+
+{% hint style="danger" %}  
+La configuration initiale du système doit être effectuée uniquement par du personnel autorisé. Avant de configurer le système, il convient de vérifier que le robot commandé par celui-ci fonctionne conformément à l'usage prévu.
+{% endhint %}
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-1-Detection_area_configuration.md)
 ### 8.1.1	Detection area configuration
-Go to [system] – [10. Safety System] – [Safety Radar] - [radar sensor setting] menu to configure the detection zone. 
+Go to `[F2: system] – 10. Safety System – Safety Radar - radar sensor setting` menu to configure the detection zone. 
 -	Tabs 1 to 6: Up to six radar sensors can be used. Tabs 1 to 4 represent the built-in radars installed on the robot base, while Tabs 5 and 6 represent the external radars. The installation locations of the built-in radars are shown in the figure below.
 
 <p align="center">
@@ -713,14 +768,14 @@ Go to [system] – [10. Safety System] – [Safety Radar] - [radar sensor settin
 </p>
 
 -	Active: Enables or disables the radar sensor
--	zone1: When the built-in radar sensor is enabled, Zone 1 (the stop zone) is automatically enabled. The end point of Zone 1 is equal to the start point of the next enabled zone. For example, if Zone 1 is enabled, Zone 2 is disabled, and Zone 3 is enabled with a start point of 2000, the range of Zone 1 is 2000 mm from the radar sensor.
+-	zone1: When the built-in radar sensor is enabled, zone1 (the stop zone) is automatically enabled. The end point of zone1 is equal to the start point of the next enabled zone. For example, if zone1 is enabled, zone2 is disabled, and zone3 is enabled with a start point of 2000, the range of zone1 is 2000 mm from the radar sensor.
 -	zone2 ~ 4: Enter the start point for each zone; the start point of the next enabled zone serves as the end point of the previous zone. For example, if zone2 is set to 1000 and zone3 is set to 2000 and enabled, the range for zone2 is configured from 1000 to 2000 mm. When a moving object is detected within zones 2 to 4, a robot deceleration signal is output. The input range is 1000 to 5000. 
 -	End point: Sets the end point of the last zone. The input range is 500 to 5000.
 -	Valid azimuth start/end: Sets the start and end of angles of the detection zone. The input range is -55° to 55°.
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-2-Radar_replan.md)
 ### 8.1.2	Radar replan
-Go to [system] – [10. Safety System] – [Safety Radar] - [Safety radar replan setting] menu to set the deceleration ratio when an object is detected in zones 2 ~ 4.
+Go to `[F2: system] – 10. Safety System – Safety Radar - Safety radar replan setting` menu to set the deceleration ratio when an object is detected in zones 2 ~ 4.
 -	Replan: Enables or disables the robot stop/deceleration function upon object detection.
 -	speed detection delay time: Sets the delay time before verifying if the robot meets the speed limit after deceleration. In other words, the system starts checking whether the speed limit is met after this delay time has elapsed.
 -	zone2 ~ zone4
@@ -729,14 +784,14 @@ Go to [system] – [10. Safety System] – [Safety Radar] - [Safety radar replan
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-3-Radar_detection_monitoring.md)
 ### 8.1.3	Radar detection monitoring
-Navigate to [system] – [10. Safety System] – [Safety Radar] - [Radar detection monitoring] to view objects detected within the detection zone. Each radar sensor displays a maximum of two detected objects. Detected objects per radar are organized into tabs, as shown below.
+Navigate to `[F2: system] – 10. Safety System – Safety Radar - Radar detection monitoring` to view objects detected within the detection zone. Each radar sensor displays a maximum of two detected objects. Detected objects per radar are organized into tabs, as shown below.
 -	Built-in(1) tab: Built-in radars 1 and 3
 -	Built-in(2) tab: Built-in radars 2 and 4
 -	External tab: External radars 5 and 6
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-4-Radar_object_detection_parameter.md)
 ### 8.1.4	Radar object detection parameter
-Navigate to [system] – [10. Safety System] – [Safety Radar] - [Radar object detection parameter] menu to configure object detection parameters. Detection performance depends on the configured values. After setting the parameters, ensure to verify proper operation and perform a risk assessment.
+Navigate to `[F2: system] – 10. Safety System – Safety Radar - Radar object detection parameter` menu to configure object detection parameters. Detection performance depends on the configured values. After setting the parameters, ensure to verify proper operation and perform a risk assessment.
 -	epsilon: Represents the distance between points for clustering, used to distinguish between core points and outliers. If the distance between points is less than this value, they are processed as a cluster.
 -	min point: The minimum number of points needed to create a cluster.
 -	max speed: Represents the maximum speed of points to be grouped into a cluster. Higher values enable the detection of fast-moving objects, while lower values prevent the detection of objects moving faster than the set speed.
@@ -747,7 +802,7 @@ Navigate to [system] – [10. Safety System] – [Safety Radar] - [Radar object 
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-5-Radar_version_information.md)
 ### 8.1.5	Radar version information
-Enter engineering mode and go to [system] – [10. Safety System] – [Safety Radar] - [Radar version information] to check the radar-related information.
+Enter engineering mode and go to `[F2: system] – 10. Safety System – Safety Radar - Radar version information` to check the radar-related information.
 
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-6-Safety_function_verification/README.md)
@@ -758,6 +813,9 @@ Since the system can operate in various environments, the installer must verify 
 A system that has not completed verification does not guarantee the operation of safety functions. Even if not mentioned in the verification details below, if there are specific characteristics of the environment in which the system operates, they must be added to the verification details to define the mandatory tests. All verification contents shall be recorded as data for future proof.
 {% endhint %}
 
+{% hint style="danger" %}
+Un système dont la validation n'a pas été effectuée ne garantit pas le bon fonctionnement des fonctions de sécurité. Même si certains éléments ne sont pas mentionnés dans les points de validation ci-dessous, toute particularité de l'environnement dans lequel le système est utilisé doit être prise en compte afin de compléter la procédure de validation et de définir les essais obligatoires. Tous les résultats de validation doivent être consignés et conservés comme éléments de preuve pour une utilisation ultérieure.
+{% endhint %}
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-6-Safety_function_verification/8-1-6-1.md)
 #### 8.1.6.1	Access detection function verification procedure
 When the system is operated under test conditions, the access detection safety function must activate, and no factors should exist in the operating environment that could degrade the performance of the access detection function. The following requirements apply when verifying the access detection function:
@@ -876,6 +934,10 @@ Issues caused by the above factors can be resolved through the following methods
 
 {% hint style="warning" %}
 Contamination such as dust, oil, or moisture on the sensor's protective case (radome) may degrade the system's detection performance. To prevent malfunctions, the radome must be inspected and maintained periodically to ensure it remains free of contaminants.
+{% endhint %}
+
+{% hint style="warning" %}
+La présence de contaminants tels que de la poussière, de l'huile ou de l'humidité sur le boîtier de protection du capteur (radôme) peut dégrader les performances de détection du système. Afin de prévenir tout dysfonctionnement, le radôme doit être inspecté et entretenu régulièrement pour éviter toute accumulation de contaminants.
 {% endhint %}
 
 [__SOURCE](9-Maintenance/9-2-Troubleshooting.md)
@@ -1063,6 +1125,10 @@ Guaranteed response time: Not guaranteed during verification or update.<br>
 IP rating: Compliance is ensured when the system is mounted on the mechanical structure. If the system is arbitrarily disassembled and used separately, the corresponding rating cannot be guaranteed.
 {% endhint %}
 
+{% hint style="danger" %}
+Temps de réaction garanti: Not guaranteed during verification or update<br>
+Indice IP: La conformité aux spécifications est garantie lorsque le système est monté sur une structure de machine conformément à l'usage prévu. En cas de démontage du système et d'utilisation séparée de ses composants, cette conformité n'est plus garantie.
+{% endhint %}
 [__SOURCE](10-Specifications/10-2-Safety_parameters.md)
 ## 10.2	Safety parameters
 
@@ -1091,6 +1157,11 @@ IP rating: Compliance is ensured when the system is mounted on the mechanical st
 {% hint style="danger" %}
 Outdoor use: Safety and normal operation not guaranteed for outdoor use
 {% endhint %}
+
+{% hint style="danger" %}
+Utilisation en extérieur: La sécurité et le bon fonctionnement du système ne sont pas garantis en cas d'utilisation en extérieur.
+{% endhint %}
+
 [__SOURCE](10-Specifications/10-4-Software/README.md)
 # 10.4	Software
 [__SOURCE](10-Specifications/10-4-Software/10-4-1-System_configuration_software.md)
@@ -1101,7 +1172,26 @@ Outdoor use: Safety and normal operation not guaranteed for outdoor use
 Modification, alteration, addition, or removal of firmware on the sensor unit or control unit is strictly prohibited. Any unauthorized changes may compromise the safety function, and the manufacturer shall not be held responsible for any issues resulting from such actions.
 {% endhint %}
 
+{% hint style="danger" %}
+Toute modification, altération, ajout ou suppression non autorisé(e) du micrologiciel (firmware) du capteur ou de l'unité de commande est strictement interdit(e). En cas de modification non autorisée, le bon fonctionnement des fonctions de sécurité ne peut être garanti. Le fabricant décline toute responsabilité pour les conséquences pouvant en résulter.
+{% endhint %}
 [__SOURCE](10-Specifications/10-4-Software/10-4-2-EtherCAT.md)
 ### 10.4.2	EtherCAT
  EtherCAT is a registered trademark and patented technology licensed by Beckhoff Automation GmbH, Germany.
 
+
+[__SOURCE](attachment/README.md)
+# Appendix
+
+
+[__SOURCE](attachment/rules-criteria-and-public-notice.md)
+# Industrial Safety and Health Standards Rules and Safety Inspection Notice
+
+The industrial robot in question should be installed in consideration of the inspection standards of the Industrial Safety and Health Standards Rules and Safety Inspection Notice (if subject to inspection).
+
+"[Rules on Industrial Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/en/README)"
+
+[__SOURCE](warranty.md)
+# Quality Assurance
+
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/en/README)"
