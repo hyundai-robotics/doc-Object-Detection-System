@@ -201,7 +201,7 @@
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>레이더 센서 활성화 시 영역1 자동 활성화</td>
+      <td>레이더 센서 활성화 시 자동 활성화</td>
     </tr>
     <tr>
       <td>영역2</td>
@@ -401,7 +401,7 @@
 
 [__SOURCE](5-Operation_Principle/5-2-Detection_area/5-2-3-Stop_area-distance.md)
 ### 5.2.3	정지 영역 거리
-영역1은 정지 영역에 해당하며, 레이더 센서가 활성화되면 영역1도 자동으로 활성화된다. TP에서 입력한 영역1 값은 시작 지점을 의미하며, 영역1의 종료 지점은 활성화된 다음 영역의 시작 지점에 따라 결정된다. 만약 활성화된 영역이 없다면, 사용자가 입력한 종료 지점 값이 영역1의 종료 지점으로 적용된다. 영역1의 범위 예시는 아래와 같다.
+영역1은 정지 영역에 해당하며, 레이더 센서가 활성화되면 영역1도 자동으로 활성화된다. 영역1의 종료 지점은 활성화된 다음 영역의 시작 지점에 따라 결정된다. 만약 활성화된 영역이 없다면, 사용자가 입력한 종료 지점 값이 영역1의 종료 지점으로 적용된다. 영역1의 범위 예시는 아래와 같다.
 
 <table>
   <thead>
@@ -410,7 +410,7 @@
       <th style="text-align: center;">파라미터</th>
       <th style="text-align: center;">활성화 상태</th>
       <th style="text-align: center;">입력값</th>
-      <th style="text-align: center;">영역2 범위</th>
+      <th style="text-align: center;">영역1 범위</th>
     </tr>
   </thead>
   <tbody>
@@ -641,7 +641,9 @@
 <p align="center">
     <img src="../../_assets/7.4.1_figure_3.png" width="550"> </img>
 </p>
+<br>
 
+참고) 외장형 레이더의 케이블은 1m단위로 제작이 가능하고, 각 케이블 당 최대 5m까지 가능하다.
 [__SOURCE](7-Sensor_Usage_and_Installation/7-4-Installation_of_the_external_radar_sensor/7-4-2-Outside_of_the_robot's_operating_range.md)
 ### 7.4.2	로봇 작업 영역 외부
  로봇이 내장형 레이더 센서의 전면을 가리거나 통과하면 오감지가 발생할 수 있으므로, 로봇 작업 영역은 감지 영역에서 제외되어야 한다. 다만 이 경우 로봇 작업 영역의 외부에서 로봇 방향으로 접근하는 객체를 감지할 수 없는 한계가 발생한다. 이러한 내장형 레이더 센서의 한계를 보완하기 위해 외장형 레이더 센서를 추가 설치할 수 있으며, 이때 외장형 레이더 센서의 감지 영역은 로봇 작업 영역의 외부로 설정하면 된다.
@@ -694,7 +696,7 @@
 {% endhint %}
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-1-Detection_area_configuration.md)
 ### 8.1.1	감지 영역 설정
- [시스템] – [10. 안전 시스템] – [안전 레이더] - [레이더 센서 설정] 메뉴로 들어가면 감지 영역을 설정할 수 있다.
+ `[F2: 시스템] – 10. 안전 시스템 – 안전 레이더 - 레이더 센서 설정` 메뉴로 들어가면 감지 영역을 설정할 수 있다.
 -	탭 1 ~ 6: 레이더 센서는 최대 6대까지 사용할 수 있다. 1 ~ 4는 로봇 베이스에 설치된 내장형 레이더이고, 5 ~ 6은 외장형 레이더이다. 내장형 레이더가 설치된 위치는 아래 그림과 같다.
 
 <p align="center">
@@ -709,7 +711,7 @@
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-2-Radar_replan.md)
 ### 8.1.2	레이더 replan
- [시스템] – [10. 안전 시스템] – [안전 레이더] – [레이더 replan] 메뉴로 들어가면, 영역2 ~ 영역4에서 객체가 감지되었을 때의 감속 비율을 설정할 수 있다.
+ `[F2: 시스템] – 10. 안전 시스템 – 안전 레이더 – 레이더 replan` 메뉴로 들어가면, 영역2 ~ 영역4에서 객체가 감지되었을 때의 감속 비율을 설정할 수 있다.
 -	Replan: 객체 감지 후 로봇 정지/감속 기능의 활성화 유무를 설정한다.
 -	속도 감지 지연 시간: 로봇이 감속한 이후, 설정된 제한 속도를 만족하는지 확인하기까지의 지연 시간을 설정한다. 즉, 지연 시간이 경과한 시점부터 제한 속도의 만족 여부를 확인한다.
 -	영역2 ~ 영역4
@@ -718,14 +720,14 @@
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-3-Radar_detection_monitoring.md)
 ### 8.1.3	레이더 감지 모니터링
- [시스템] – [10. 안전 시스템] – [안전 레이더] – [레이더 감지 모니터링] 메뉴로 들어가면, 감지 영역에서 감지된 객체를 확인할 수 있다. 각 레이더 센서에서 감지한 객체는 최대 2개까지 표시된다. 레이더별 감지 객체는 아래와 같이 탭별로 분리되어 있다.
+ `[F2: 시스템] – 10. 안전 시스템 – 안전 레이더 – 레이더 감지 모니터링` 메뉴로 들어가면, 감지 영역에서 감지된 객체를 확인할 수 있다. 각 레이더 센서에서 감지한 객체는 최대 2개까지 표시된다. 레이더별 감지 객체는 아래와 같이 탭별로 분리되어 있다.
 -	내부(1) 탭: 내장형 레이더 1번, 3번
 -	내부(2) 탭: 내장형 레이더 2번, 4번
 -	외부 탭: 외장형 레이더 5번, 6번
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-4-Radar_object_detection_parameter.md)
 ### 8.1.4	레이더 객체 감지 파라미터
- [시스템] – [10. 안전 시스템] – [안전 레이더] – [레이더 객체 감지 파라미터] 메뉴로 들어가면, 객체 감지 파라미터를 설정할 수 있다. 설정값에 따라 감지 성능이 달라지므로, 파라미터 설정 후 반드시 정상 작동 여부 및 위험성 평가 등을 수행해야 한다.
+ `[F2: 시스템] – 10. 안전 시스템 – 안전 레이더 – 레이더 객체 감지 파라미터` 메뉴로 들어가면, 객체 감지 파라미터를 설정할 수 있다. 설정값에 따라 감지 성능이 달라지므로, 파라미터 설정 후 반드시 정상 작동 여부 및 위험성 평가 등을 수행해야 한다.
 -	인접거리: 객체로 군집하기 위한 포인트 간 거리를 나타내며, 군집점과 외곽점을 구분하기 위해 사용된다. 포인트 간 거리가 이 값보다 작으면 군집으로 처리된다.
 -	최소 포인트 수: 군집을 이루기 위한 최소 포인트 개수를 나타낸다.
 -	최대 속도: 객체로 군집하기 위한 포인트의 최대 속도를 나타낸다. 이 값이 커질수록 빠른 움직임을 갖는 객체를 검출할 수 있으며, 낮아지면 해당 속도 이상으로 움직이는 객체는 검출되지 않는다.
@@ -736,7 +738,7 @@
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-5-Radar_version_information.md)
 ### 8.1.5	레이더 버전 정보
- 엔지니어 모드에 진입한 후 [시스템] – [10. 안전 시스템] – [안전 레이더] – [레이더 감지 모니터링] 메뉴로 들어가면, 레이더 관련 정보를 확인할 수 있다.
+ 엔지니어 모드에 진입한 후 `[F2: 시스템] – 10. 안전 시스템 – 안전 레이더 – 레이더 감지 모니터링` 메뉴로 들어가면, 레이더 관련 정보를 확인할 수 있다.
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-6-Safety_function_verification/README.md)
 ### 8.1.6	안전 기능 검증
@@ -1090,3 +1092,19 @@ IP 등급: 본 시스템을 기계 구조물에 장착하여 사용할 때 규�
 [__SOURCE](10-Specifications/10-4-Software/10-4-2-EtherCAT.md)
 ### 10.4.2	 EtherCAT
  EtherCAT은 등록 상표이며, 독일 Beckhoff Automation GmbH를 통해 허가된 특허 기술이다.
+
+[__SOURCE](attachment/README.md)
+# 별첨
+
+
+[__SOURCE](attachment/rules-criteria-and-public-notice.md)
+# 산업안전보건기준에 관한 규칙 및 안전검사 고시
+
+당해 산업용 로봇은 산업안전보건기준에 관한 규칙 및 안전검사 고시(검사 대상일 경우)의 검사 기준을 고려하여 설치하여야 한다.
+
+"[산업안전보건기준에 관한 규칙](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/ko/README)"
+
+[__SOURCE](warranty.md)
+# 품질보증
+
+"[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/ko/README)"
