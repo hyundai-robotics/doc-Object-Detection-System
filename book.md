@@ -205,7 +205,7 @@ System parameters can be modified using the TP. Below are the configurations and
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>Automatically activates when radar sensor is enabled</td>
+      <td>Auto-activated when the radar sensor is enabled</td>
     </tr>
     <tr>
       <td>zone2</td>
@@ -394,7 +394,7 @@ Only objects moving at a measurable speed within the detection zone can be detec
 ## 5.2	Detection area
 [__SOURCE](5-Operation_Principle/5-2-Detection_area/5-2-1-Meaning_of_detection_area.md)
 ### 5.2.1	Meaning of detection area
-The detection area refers to a designated zone within the sensor’s measurable range, and up to four detection areas can be configured. The detection zone is broadly divided into a stop zone and a warning zone; the stop zone comprises Zone 1, while the warning zone comprises Zones 2 through 4. Even if an object is detected within the sensor's measurable range, the robot will not stop or decelerate if the object is outside the designated detection areas. Each area can be enabled or disabled.
+The detection area refers to a designated zone within the sensor’s measurable range, and up to four detection areas can be configured. The detection zone is broadly divided into a stop zone and a warning zone; the stop zone comprises zone1, while the warning zone comprises zones 2 through 4. Even if an object is detected within the sensor's measurable range, the robot will not stop or decelerate if the object is outside the designated detection areas. Each area can be enabled or disabled.
 
 
 [__SOURCE](5-Operation_Principle/5-2-Detection_area/5-2-2-Detection_area_parameters.md)
@@ -406,7 +406,7 @@ The detection area refers to a designated zone within the sensor’s measurable 
 
 [__SOURCE](5-Operation_Principle/5-2-Detection_area/5-2-3-Stop_area-distance.md)
 ### 5.2.3	Stop area distance
-Zone 1 corresponds to the stop zone; when the radar sensor is activated, Zone 1 is also automatically enabled. The ending point of Zone 1 is determined by the starting point of the next active zone. If no other zones are active, the user-defined value is applied as the ending point. Below are examples of the Zone 1 range:
+Zone1 corresponds to the stop zone; when the radar sensor is activated, zone1 is also automatically enabled. The ending point of zone1 is determined by the starting point of the next active zone. If no other zones are active, the user-defined value is applied as the ending point. Below are examples of the zone1 range:
 
 <table>
   <thead>
@@ -415,7 +415,7 @@ Zone 1 corresponds to the stop zone; when the radar sensor is activated, Zone 1 
       <th style="text-align: center;">Parameter</th>
       <th style="text-align: center;">Activation status</th>
       <th style="text-align: center;">Input value</th>
-      <th style="text-align: center;">Zone2 range</th>
+      <th style="text-align: center;">Zone1 range</th>
     </tr>
   </thead>
   <tbody>
@@ -652,7 +652,9 @@ Connect the XRS connector on the rear of the robot base to one of the connectors
 <p align="center">
     <img src="../../_assets/7.4.1_figure_3.png" width="550"> </img>
 </p>
+<br>
 
+Note) External radar cables can be customized in 1m increments, up to a maximum length of 5m per cable.
 [__SOURCE](7-Sensor_Usage_and_Installation/7-4-Installation_of_the_external_radar_sensor/7-4-2-Outside_of_the_robot's_operating_range.md)
 ### 7.4.2	Outside of the robot ‘s operating range
 Since false detections may occur if the robot obstructs or passes in front of the built-in radar sensor, the robot’s operating range must be excluded from the detection zone. However, this configuration creates a limitation where objects approaching the robot from outside the robot working area cannot be detected. To compensate for this limitation of the built-in sensor, an additional external radar sensor can be installed, and its detection zone should be configured to cover the area outside the robot’s operating range.
@@ -705,7 +707,7 @@ The initial configuration of the system must be performed only by authorized per
 {% endhint %}
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-1-Detection_area_configuration.md)
 ### 8.1.1	Detection area configuration
-Go to [system] – [10. Safety System] – [Safety Radar] - [radar sensor setting] menu to configure the detection zone. 
+Go to `[F2: system] – 10. Safety System – Safety Radar - radar sensor setting` menu to configure the detection zone. 
 -	Tabs 1 to 6: Up to six radar sensors can be used. Tabs 1 to 4 represent the built-in radars installed on the robot base, while Tabs 5 and 6 represent the external radars. The installation locations of the built-in radars are shown in the figure below.
 
 <p align="center">
@@ -713,14 +715,14 @@ Go to [system] – [10. Safety System] – [Safety Radar] - [radar sensor settin
 </p>
 
 -	Active: Enables or disables the radar sensor
--	zone1: When the built-in radar sensor is enabled, Zone 1 (the stop zone) is automatically enabled. The end point of Zone 1 is equal to the start point of the next enabled zone. For example, if Zone 1 is enabled, Zone 2 is disabled, and Zone 3 is enabled with a start point of 2000, the range of Zone 1 is 2000 mm from the radar sensor.
+-	zone1: When the built-in radar sensor is enabled, zone1 (the stop zone) is automatically enabled. The end point of zone1 is equal to the start point of the next enabled zone. For example, if zone1 is enabled, zone2 is disabled, and zone3 is enabled with a start point of 2000, the range of zone1 is 2000 mm from the radar sensor.
 -	zone2 ~ 4: Enter the start point for each zone; the start point of the next enabled zone serves as the end point of the previous zone. For example, if zone2 is set to 1000 and zone3 is set to 2000 and enabled, the range for zone2 is configured from 1000 to 2000 mm. When a moving object is detected within zones 2 to 4, a robot deceleration signal is output. The input range is 1000 to 5000. 
 -	End point: Sets the end point of the last zone. The input range is 500 to 5000.
 -	Valid azimuth start/end: Sets the start and end of angles of the detection zone. The input range is -55° to 55°.
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-2-Radar_replan.md)
 ### 8.1.2	Radar replan
-Go to [system] – [10. Safety System] – [Safety Radar] - [Safety radar replan setting] menu to set the deceleration ratio when an object is detected in zones 2 ~ 4.
+Go to `[F2: system] – 10. Safety System – Safety Radar - Safety radar replan setting` menu to set the deceleration ratio when an object is detected in zones 2 ~ 4.
 -	Replan: Enables or disables the robot stop/deceleration function upon object detection.
 -	speed detection delay time: Sets the delay time before verifying if the robot meets the speed limit after deceleration. In other words, the system starts checking whether the speed limit is met after this delay time has elapsed.
 -	zone2 ~ zone4
@@ -729,14 +731,14 @@ Go to [system] – [10. Safety System] – [Safety Radar] - [Safety radar replan
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-3-Radar_detection_monitoring.md)
 ### 8.1.3	Radar detection monitoring
-Navigate to [system] – [10. Safety System] – [Safety Radar] - [Radar detection monitoring] to view objects detected within the detection zone. Each radar sensor displays a maximum of two detected objects. Detected objects per radar are organized into tabs, as shown below.
+Navigate to `[F2: system] – 10. Safety System – Safety Radar - Radar detection monitoring` to view objects detected within the detection zone. Each radar sensor displays a maximum of two detected objects. Detected objects per radar are organized into tabs, as shown below.
 -	Built-in(1) tab: Built-in radars 1 and 3
 -	Built-in(2) tab: Built-in radars 2 and 4
 -	External tab: External radars 5 and 6
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-4-Radar_object_detection_parameter.md)
 ### 8.1.4	Radar object detection parameter
-Navigate to [system] – [10. Safety System] – [Safety Radar] - [Radar object detection parameter] menu to configure object detection parameters. Detection performance depends on the configured values. After setting the parameters, ensure to verify proper operation and perform a risk assessment.
+Navigate to `[F2: system] – 10. Safety System – Safety Radar - Radar object detection parameter` menu to configure object detection parameters. Detection performance depends on the configured values. After setting the parameters, ensure to verify proper operation and perform a risk assessment.
 -	epsilon: Represents the distance between points for clustering, used to distinguish between core points and outliers. If the distance between points is less than this value, they are processed as a cluster.
 -	min point: The minimum number of points needed to create a cluster.
 -	max speed: Represents the maximum speed of points to be grouped into a cluster. Higher values enable the detection of fast-moving objects, while lower values prevent the detection of objects moving faster than the set speed.
@@ -747,7 +749,7 @@ Navigate to [system] – [10. Safety System] – [Safety Radar] - [Radar object 
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-5-Radar_version_information.md)
 ### 8.1.5	Radar version information
-Enter engineering mode and go to [system] – [10. Safety System] – [Safety Radar] - [Radar version information] to check the radar-related information.
+Enter engineering mode and go to `[F2: system] – 10. Safety System – Safety Radar - Radar version information` to check the radar-related information.
 
 
 [__SOURCE](8-Configuration_and_Operation/8-1-Configuration_procedure/8-1-6-Safety_function_verification/README.md)
@@ -1105,3 +1107,19 @@ Modification, alteration, addition, or removal of firmware on the sensor unit or
 ### 10.4.2	EtherCAT
  EtherCAT is a registered trademark and patented technology licensed by Beckhoff Automation GmbH, Germany.
 
+
+[__SOURCE](attachment/README.md)
+# Appendix
+
+
+[__SOURCE](attachment/rules-criteria-and-public-notice.md)
+# Industrial Safety and Health Standards Rules and Safety Inspection Notice
+
+The industrial robot in question should be installed in consideration of the inspection standards of the Industrial Safety and Health Standards Rules and Safety Inspection Notice (if subject to inspection).
+
+"[Rules on Industrial Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/en/README)"
+
+[__SOURCE](warranty.md)
+# Quality Assurance
+
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/en/README)"
