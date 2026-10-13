@@ -654,7 +654,10 @@ Connect the XRS connector on the rear of the robot base to one of the connectors
 </p>
 <br>
 
-Note) External radar cables can be customized in 1m increments, up to a maximum length of 5m per cable.
+- External radar cables <br>
+External radar cables can be manufactured in 1m increments. The total cable length is limited to 25m. <br>
+Example 1) Using one external radar sensor: One 25m cable can be used <br>
+Example 2) Using two external radar sensors: Two cables with lengths of 10m and 15m can be used, respectively (total cable length: 25m).
 [__SOURCE](7-Sensor_Usage_and_Installation/7-4-Installation_of_the_external_radar_sensor/7-4-2-Outside_of_the_robot's_operating_range.md)
 ### 7.4.2	Outside of the robot ‘s operating range
 Since false detections may occur if the robot obstructs or passes in front of the built-in radar sensor, the robot’s operating range must be excluded from the detection zone. However, this configuration creates a limitation where objects approaching the robot from outside the robot working area cannot be detected. To compensate for this limitation of the built-in sensor, an additional external radar sensor can be installed, and its detection zone should be configured to cover the area outside the robot’s operating range.

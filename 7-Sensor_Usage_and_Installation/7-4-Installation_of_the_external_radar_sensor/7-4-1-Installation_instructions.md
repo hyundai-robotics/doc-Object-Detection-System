@@ -21,4 +21,7 @@ Connect the XRS connector on the rear of the robot base to one of the connectors
 </p>
 <br>
 
-Note) External radar cables can be customized in 1m increments, up to a maximum length of 5m per cable.
+- External radar cables <br>
+External radar cables can be manufactured in 1m increments. The total cable length is limited to 25m. <br>
+Example 1) Using one external radar sensor: One 25m cable can be used <br>
+Example 2) Using two external radar sensors: Two cables with lengths of 10m and 15m can be used, respectively (total cable length: 25m).
