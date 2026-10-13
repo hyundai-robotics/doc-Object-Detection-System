@@ -621,11 +621,11 @@
 
 [__SOURCE](7-Sensor_Usage_and_Installation/7-4-Installation_of_the_external_radar_sensor/7-4-1-Installation_instructions.md)
 ### 7.4.1	설치 방법
-- 외장형 레이더 센서 미 설치 시(내장형 레이더만 사용하는 경우)
+- 외장형 레이더 센서 미 설치 시(내장형 레이더만 사용하는 경우) <br>
 로봇 베이스 후면의 XRS 커넥터에 종단 저항을 연결한다.
 
 <p align="center">
-    <img src="../../_assets/7.4.1_figure_1.png" width="150"> </img>
+    <img src="../../_assets/7.4.1_figure_1.png" width="230"> </img>
 </p>
 
 - 외장형 레이더 1대 설치 시 연결 방법 <br>
@@ -644,7 +644,7 @@
 <br>
 
 - 외장형 레이더 케이블 <br>
-외장형 레이더 케이블은 1m 단위로 제작할 수 있으며, 케이블의 총 길이는 최대 25m로 제한된다.
+외장형 레이더 케이블은 1m 단위로 제작할 수 있으며, 케이블의 총 길이는 최대 25m로 제한된다. <br>
 예시1) 외장형 레이더 센서 1개 사용: 케이블 1개, 길이 25m 사용 가능 <br>
 예시2) 외장형 레이더 센서 2개 사용: 케이블 2개, 길이 각각 10m 및 15m 사용 가능 (총 길이 25m)
 [__SOURCE](7-Sensor_Usage_and_Installation/7-4-Installation_of_the_external_radar_sensor/7-4-2-Outside_of_the_robot's_operating_range.md)
