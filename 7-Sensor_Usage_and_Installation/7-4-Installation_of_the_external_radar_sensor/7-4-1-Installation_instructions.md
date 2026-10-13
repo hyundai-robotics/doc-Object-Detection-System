@@ -1,9 +1,9 @@
 ### 7.4.1	Installation instructions
-- Non-installation of external radar sensors (Built-in radars only)
+- Non-installation of external radar sensors (Built-in radars only) <br>
 Connect a terminating resistor to the XRS connector on the rear of the robot base.
 
 <p align="center">
-    <img src="../../_assets/7.4.1_figure_1.png" width="150"> </img>
+    <img src="../../_assets/7.4.1_figure_1.png" width="230"> </img>
 </p>
 
 -   Connection method for installing a single external radar <br>

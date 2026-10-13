@@ -632,11 +632,11 @@ If there is a risk of an object approaching a blind spot that cannot be detected
 
 [__SOURCE](7-Sensor_Usage_and_Installation/7-4-Installation_of_the_external_radar_sensor/7-4-1-Installation_instructions.md)
 ### 7.4.1	Installation instructions
-- Non-installation of external radar sensors (Built-in radars only)
+- Non-installation of external radar sensors (Built-in radars only) <br>
 Connect a terminating resistor to the XRS connector on the rear of the robot base.
 
 <p align="center">
-    <img src="../../_assets/7.4.1_figure_1.png" width="150"> </img>
+    <img src="../../_assets/7.4.1_figure_1.png" width="230"> </img>
 </p>
 
 -   Connection method for installing a single external radar <br>
