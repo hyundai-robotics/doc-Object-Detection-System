@@ -88,56 +88,56 @@ System parameters can be modified using the TP. Below are the configurations and
       <td style="text-align: center;">Min.</td>
       <td style="text-align: center;">Max.</td>
       <td style="text-align: center;">Default</td>
-      <td style="text-align: center;">Note</td>
+      <td style="text-align: center;">Unit</td>
     </tr>
     <tr>
       <td>epsilon</td>
       <td>1</td>
       <td>20</td>
       <td>10</td>
-      <td></td>
+      <td>m</td>
     </tr>
     <tr>
       <td>min point</td>
       <td>1</td>
       <td>10</td>
       <td>4</td>
-      <td></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>max speed</td>
       <td>0</td>
       <td>140</td>
       <td>140</td>
-      <td></td>
+      <td>m/s</td>
     </tr>
     <tr>
       <td>hit active</td>
       <td>1</td>
       <td>50</td>
       <td>1</td>
-      <td></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>hit stop</td>
       <td>1</td>
       <td>50</td>
       <td>30</td>
-      <td></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>idis</td>
       <td>0</td>
       <td>20</td>
       <td>0</td>
-      <td></td>
+      <td>m</td>
     </tr>
     <tr>
       <td>tracker radius</td>
       <td>0</td>
       <td>20</td>
       <td>10</td>
-      <td></td>
+      <td>m</td>
     </tr>
   </tbody>
 </table>
