@@ -87,56 +87,56 @@
       <td style="text-align: center;">최소값</td>
       <td style="text-align: center;">최대값</td>
       <td style="text-align: center;">기본값</td>
-      <td style="text-align: center;">비고</td>
+      <td style="text-align: center;">단위</td>
     </tr>
     <tr>
       <td>인접거리</td>
       <td>1</td>
       <td>20</td>
       <td>10</td>
-      <td></td>
+      <td>m</td>
     </tr>
     <tr>
       <td>최소 포인트 수</td>
       <td>1</td>
       <td>10</td>
       <td>4</td>
-      <td></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>최대 속도</td>
       <td>0</td>
       <td>140</td>
       <td>140</td>
-      <td></td>
+      <td>m/s</td>
     </tr>
     <tr>
       <td>최소 연속 프레임 수</td>
       <td>1</td>
       <td>50</td>
       <td>1</td>
-      <td></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>최대 프레임 수</td>
       <td>1</td>
       <td>50</td>
       <td>30</td>
-      <td></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>최소 이동 거리</td>
       <td>0</td>
       <td>20</td>
       <td>0</td>
-      <td></td>
+      <td>m</td>
     </tr>
     <tr>
       <td>최대 반경</td>
       <td>0</td>
       <td>20</td>
       <td>10</td>
-      <td></td>
+      <td>m</td>
     </tr>
   </tbody>
 </table>
